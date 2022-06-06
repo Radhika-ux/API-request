@@ -1,0 +1,21 @@
+<p>userdata works!</p>
+<table class="table table-bordered border-primary">
+
+    <tr>
+        <th>id</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>e-mail</th>
+        <th>avatar</th>
+    </tr>
+    <tr *ngFor=" let item of user_list; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{item.id}}</td>
+        <td> {{item.first_name}}</td>
+        <td> {{item.last_name}}</td>
+        <td>{{item.email}}</td>
+        <td>
+            <img src="https://reqres.in/img/faces/7-image.jpg" alt=" avatar image">
+        </td>
+    </tr>
+</table>
